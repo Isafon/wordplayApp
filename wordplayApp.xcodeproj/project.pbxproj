@@ -13,6 +13,7 @@
 		FB356E4627E903140010F5D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB356E4427E903140010F5D3 /* Main.storyboard */; };
 		FB356E4827E903150010F5D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB356E4727E903150010F5D3 /* Assets.xcassets */; };
 		FB356E4B27E903150010F5D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB356E4927E903150010F5D3 /* LaunchScreen.storyboard */; };
+		FB356E5527E910750010F5D3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB356E5427E910740010F5D3 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FB356E4727E903150010F5D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB356E4A27E903150010F5D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB356E4C27E903150010F5D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB356E5427E910740010F5D3 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		FB356E3D27E903140010F5D3 /* wordplayApp */ = {
 			isa = PBXGroup;
 			children = (
+				FB356E5427E910740010F5D3 /* SecondViewController.swift */,
 				FB356E3E27E903140010F5D3 /* AppDelegate.swift */,
 				FB356E4027E903140010F5D3 /* SceneDelegate.swift */,
 				FB356E4227E903140010F5D3 /* ViewController.swift */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB356E5527E910750010F5D3 /* SecondViewController.swift in Sources */,
 				FB356E4327E903140010F5D3 /* ViewController.swift in Sources */,
 				FB356E3F27E903140010F5D3 /* AppDelegate.swift in Sources */,
 				FB356E4127E903140010F5D3 /* SceneDelegate.swift in Sources */,
