@@ -108,7 +108,8 @@
                                     <color key="baseBackgroundColor" red="0.71067732572555542" green="0.94467395544052124" blue="0.033920146524906158" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="CCb-Yk-vqT" kind="show" identifier="mySegueTwo" id="p95-9L-REf"/>
+                                    <action selector="onEnterButtonTapped2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NkS-Hb-D8T"/>
+                                    <segue destination="CCb-Yk-vqT" kind="show" identifier="segue2" id="pSt-05-eKj"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -32,12 +32,18 @@ class ViewController: UIViewController {
     
     override func
     prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
     let nvc = segue.destination as! SecondViewController
+        
+    
     
     nvc.sentence = "My uncle wants to go to the \(enterWordTextField.text ?? "")"
     
         let nav = segue.destination as! ThirdViewController
         
+        if segue.identifier == "mySegue" {
+            
+        }
         nav.sentenceNoun = "My \(adjTextField.text ?? "") \(nounTextField.text ?? "") \(verbTextField.text ?? "") to go to the mall"
         
 }
