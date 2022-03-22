@@ -15,6 +15,9 @@ class ViewController: UIViewController {
     @IBAction func onEnterButtonTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "mySegue", sender: nil)
         
+        
+        
+        
        
         
       //  enterWordTextField.resignFirstResponder()
