@@ -18,6 +18,13 @@ class ViewController: UIViewController {
     }
     
 //madlibs advanced
+    @IBAction func onEnterButtonTapped2(_ sender: UIButton) {
+        performSegue(withIdentifier: "segue2", sender: nil)
+        nounTextField.resignFirstResponder()
+        adjTextField.resignFirstResponder()
+        verbTextField.resignFirstResponder()
+    }
+    
     @IBOutlet weak var nounTextField: UITextField!
     @IBOutlet weak var adjTextField: UITextField!
     @IBOutlet weak var verbTextField: UITextField!
