@@ -11,23 +11,17 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var sentenceLabel: UILabel!
     
+    var sentence = String()
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        sentenceLabel.text = sentence
+        
+//        sentenceLabel.text = "My uncle wants to go to the \(enterWordTextField.text ?? "")"
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
