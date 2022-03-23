@@ -109,7 +109,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="onEnterButtonTapped2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NkS-Hb-D8T"/>
-                                    <segue destination="CCb-Yk-vqT" kind="show" identifier="segue2" id="pSt-05-eKj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -129,50 +128,6 @@
             </objects>
             <point key="canvasLocation" x="919.62616822429902" y="67.386609071274307"/>
         </scene>
-        <!--Third View Controller-->
-        <scene sceneID="vvt-ul-qrm">
-            <objects>
-                <viewController id="CCb-Yk-vqT" customClass="ThirdViewController" customModule="wordplayApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="D34-UV-KNF">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My uncle wants to go to the..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKG-jh-PD2">
-                                <rect key="frame" x="33" y="358" width="362" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My uncle wants to go to the..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2g5-QZ-nAB">
-                                <rect key="frame" x="33" y="573" width="362" height="198"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My uncle wants to go to the..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYy-k5-Ykg">
-                                <rect key="frame" x="33" y="127" width="362" height="228"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="vfK-qM-Se0"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="7kb-JS-WzU"/>
-                    <connections>
-                        <outlet property="sentenceLabelAdj" destination="VKG-jh-PD2" id="f2s-Mh-EUm"/>
-                        <outlet property="sentenceLabelNoun" destination="iYy-k5-Ykg" id="LbZ-9W-j8a"/>
-                        <outlet property="sentenceLabelverb" destination="2g5-QZ-nAB" id="1E2-Xl-Gsc"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7MK-IZ-zZZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="920" y="737"/>
-        </scene>
         <!--Second View Controller-->
         <scene sceneID="rzX-Dl-Vap">
             <objects>
@@ -188,18 +143,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My uncle wants to go to the..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6T-lS-BdE">
+                                <rect key="frame" x="9" y="380" width="410" height="353"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Cn3-oE-98v"/>
                         <color key="backgroundColor" systemColor="systemGray3Color"/>
                     </view>
                     <navigationItem key="navigationItem" id="nC3-C7-cRM"/>
                     <connections>
+                        <outlet property="grammarSentenceLabel" destination="z6T-lS-BdE" id="DML-w6-JKl"/>
                         <outlet property="sentenceLabel" destination="UyM-EK-h11" id="nZS-le-HCf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wco-2a-2Gh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1619" y="67"/>
+            <point key="canvasLocation" x="1617.7570093457944" y="66.738660907127439"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DZj-IB-JJ5">
@@ -226,9 +189,6 @@
         </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

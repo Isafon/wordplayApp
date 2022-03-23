@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    //madlibs basic
+//madlibs basic
     @IBOutlet weak var enterWordTextField: UITextField!
     
     @IBAction func onEnterButtonTapped(_ sender: UIButton) {
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
 //madlibs advanced
     @IBAction func onEnterButtonTapped2(_ sender: UIButton) {
-        performSegue(withIdentifier: "segue2", sender: nil)
+        performSegue(withIdentifier: "mySegueTwo", sender: nil)
         nounTextField.resignFirstResponder()
         adjTextField.resignFirstResponder()
         verbTextField.resignFirstResponder()
@@ -33,20 +33,22 @@ class ViewController: UIViewController {
     override func
     prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-    let nvc = segue.destination as! SecondViewController
+//2nd Segue:
         
+        let nvc = segue.destination as! SecondViewController
     
+        nvc.sentence = "My uncle wants to go to the \(enterWordTextField.text ?? "")"
+ 
+//Segue Three:
+      
+  let nav = segue.destination as! SecondViewController
+
+        nav.grammarSentence = "My \(adjTextField.text ?? "") \(nounTextField.text ?? "") \(verbTextField.text ?? "") to go to the mall"
     
-    nvc.sentence = "My uncle wants to go to the \(enterWordTextField.text ?? "")"
-    
-        let nav = segue.destination as! ThirdViewController
-        
-        if segue.identifier == "mySegue" {
-            
-        }
-        nav.sentenceNoun = "My \(adjTextField.text ?? "") \(nounTextField.text ?? "") \(verbTextField.text ?? "") to go to the mall"
+
         
 }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
