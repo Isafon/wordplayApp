@@ -43,7 +43,7 @@ class ViewController: UIViewController {
       
   let nav = segue.destination as! SecondViewController
 
-        nav.grammarSentence = "My \(adjTextField.text ?? "") \(nounTextField.text ?? "") \(verbTextField.text ?? "") to go to the mall"
+        nav.grammarSentence = "My \(adjTextField.text ?? "") \(nounTextField.text ?? "") \(verbTextField.text ?? "") to go to the \(enterWordTextField.text ?? "")"
         
 }
         
