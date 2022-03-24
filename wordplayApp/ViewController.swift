@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var nounTextField: UITextField!
     @IBOutlet weak var adjTextField: UITextField!
     @IBOutlet weak var verbTextField: UITextField!
-
+    
     
     override func
     prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -44,8 +44,6 @@ class ViewController: UIViewController {
   let nav = segue.destination as! SecondViewController
 
         nav.grammarSentence = "My \(adjTextField.text ?? "") \(nounTextField.text ?? "") \(verbTextField.text ?? "") to go to the mall"
-    
-
         
 }
         

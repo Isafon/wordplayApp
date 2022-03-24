@@ -120,7 +120,7 @@
                         <outlet property="adjTextField" destination="6jR-30-lRV" id="OWB-XP-wfQ"/>
                         <outlet property="enterWordTextField" destination="6gY-Pt-l0R" id="XRP-ly-tDu"/>
                         <outlet property="nounTextField" destination="ZQv-Cw-Bps" id="19P-tn-ALd"/>
-                        <outlet property="verbTextField" destination="gjA-v1-4Ez" id="ebt-IX-2dd"/>
+                        <outlet property="verbTextField" destination="gjA-v1-4Ez" id="b8E-JK-2qN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -143,8 +143,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My uncle wants to go to the..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6T-lS-BdE">
-                                <rect key="frame" x="9" y="380" width="410" height="353"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My uncle wants to go to the..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6T-lS-BdE">
+                                <rect key="frame" x="19" y="382" width="399" height="353"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
                                 <nil key="textColor"/>
